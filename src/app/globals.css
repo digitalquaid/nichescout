@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #0b0f14;
+  color: #f5f7fa;
+}
+
+.card {
+  @apply bg-card border border-border rounded-xl p-4;
+}
+
+.badge {
+  @apply inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-xs font-medium;
+}
+
+.badge-yes {
+  @apply bg-primary/10 text-primary;
+}
+
+.badge-no {
+  @apply bg-muted/10 text-muted;
+}
+
+.skeleton {
+  @apply animate-pulse bg-border/60 rounded;
+}
